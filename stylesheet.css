@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Portfolio</title>
+</head>
+<body>
+<!-- Start of nav -->
+        <div class="header-container">
+        <logo>Logo placeholder</logo>
+        <nav id="navbar">
+            <ul class="navbar-childern">
+                <li>About</li>
+                <li>Work</li>
+                <li>Contact</li>
+            </ul>
+            <ul id="nav-media">
+                <li> 
+                    <span class="icon"><i class="fa-brands fa-github"></i><a href=""></a></span>
+                    <span class="text"> Git-Hub</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa-brands fa-instagram"></i><a href=""></a></span>
+                    <span class="text"> Instagram</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa-brands fa-linkedin-in"></i><a href=""></a></span>
+                    <span class="text"> Linkedin</span>
+                    </li>
+                <li>
+                    <span><i class="fa-brands fa-facebook"></i><a href=""></a></span>
+                    <span class="text"> Facebook</span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+<!-- End of nav -->
+ <!-- Start of welcome -->
+<section id="welcome-section" class="welcome-section">
+    <h1> Colten Siemer</h1>
+    <p>Web Developer</p>
+    <div> Skills placeholder</div>
+</section>:root { 
+
+    /* --color-primary
+   /*  */
+   
+    /*  */
+    --color-secondary  */
+
+    --fs-normal: 16px; 
+    --fs-large: 24px; 
+
+    
+    
+  
+}
+
+* { 
+    margin: 0;
+    padding: 0; 
+    /* border: .1px yellowgreen solid; */
+}
+
+
+
+.header-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    gap: 20px;
+   
+
+}
+
+#navbar { 
+    height: 100vh;
+    overflow: scroll;
+}
+
+#navbar>ul { 
+    font-size: var(--fs-large);
+}
+
+#navbar>ul>li { 
+    padding: 1rem;
+    list-style: none;
+}
+/* Media in nav */
+#nav-media { 
+
+    font-size: var(--fs-normal) !important;
+    
+}
+
+.icon { 
+    display: inline;
+    position: relative;
+    justify-content: center;
+    font-weight: 600;
+    
+
+}
+
+.text { 
+    position: absolute;
+    transition: .5s;
+    z-index: -1;
+    opacity: 0;
+   
+}
+
+#nav-media>li:hover>.text{ 
+    opacity: 1;
+    transform: translateX(10px);
+
+}
+
+
+/* Welcome page */
+#welcome-section { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width:100%; 
+}
+
+
+#projects { 
+    text-align: center;
+    height: 100vh; 
+    width:100%; 
+
+}
+
+
+footer { 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 50vh;
+
+}
+
+#footer-media { 
+    display: flex;
+    flex-direction: row;
+    
+}
+<!-- End of welcome -->
+
+<!-- Start of Projects -->
+<section id="projects" class="projects"> 
+    <h1 class="project-section-header">My Works</h1>
+    <div class="project-grid"> 
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+    </div>
+</section>
+<!-- End of Projects -->
+
+<!-- Start of footer -->
+<footer> 
+    <h1>Contact</h1>
+    <!-- Enter Email Form -->
+    <form></form>
+    <ul id="footer-media">
+        <li>lorem<a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+    </ul>
+
+</footer>
+<!-- End of Footer -->
+
+<script src="https://kit.fontawesome.com/1b0a8f8e7d.js" crossorigin="anonymous"></script>
+</body>
+</html>
