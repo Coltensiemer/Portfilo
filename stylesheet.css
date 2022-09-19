@@ -70,7 +70,11 @@
 #nav-media>li:hover>.text{ 
     opacity: 1;
     transform: translateX(10px);
-
+    background-color: aqua;
+    padding: .5em; 
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    font-size: 20px;
 }
 
 
@@ -84,6 +88,23 @@
     width:100%; 
 }
 
+.name { 
+    font-size: 32px;
+    letter-spacing: .2rem;
+    position: relative;
+
+}
+
+.name>span { 
+    font-size:64px;
+}
+
+#welcome-section>div { 
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
 
 #projects { 
     text-align: center;
@@ -92,6 +113,10 @@
 
 }
 
+#about-me { 
+    text-align: center;
+    
+}
 
 footer { 
     display: flex;
